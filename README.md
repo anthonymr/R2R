@@ -20,6 +20,10 @@ To start as client:
   r2r -n [your identifier] -t client -p [port] -s [localhost/ip]
 ```
 
+To send a message just press ctrl + n
+
+To exit send a new message with !q as content
+
 If starting as client and no server name (-s) provided, then localhost is used.
 
 ## Help
