@@ -16,10 +16,15 @@ class Arguments
     arguments = {}
 
     OptionParser.new do |opt|
+      opt.banner = 'Usage: r2r -n [your identifier] -t [client/server] -p [port] -s [localhost/ip]'
       opt.on('-t', '--type TYPE', 'The type of the connection (client/server)') { |o| arguments[:type] = o }
       opt.on('-s', '--server [SERVER]', server_description) { |o| arguments[:server] = o }
       opt.on('-p', '--port PORT', 'The port number') { |o| arguments[:port] = o }
       opt.on('-n', '--name NAME', 'The name of the user') { |o| arguments[:name] = o }
+      opt.on('-v', '--version', 'Show version') do
+        puts 'R2R version 0.1.0'
+        exit
+      end
     end.parse!
 
     arguments
