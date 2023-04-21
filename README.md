@@ -2,7 +2,7 @@
 ![Built with ruby](https://img.shields.io/badge/built%20with-ruby-red)
 ![Ruby version 3.1.1](https://img.shields.io/badge/ruby%20version-3.1.3-brightgreen)
 
-R2R is a P2P CLI chat built with Ruby just for fun.
+R2R is a P2P CLI chat built with Ruby using threads.
 
 ## Installation
 Just run in tour terminal:
